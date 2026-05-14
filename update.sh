@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#Dette skriptet kjører både Flatpack og DNF update. Bør fungere på alle Fedora-baserte distroer.
+
+# Jeg har satt opp dette skriptet som en knapp på Stream Deck med OpenDeck og "Run Command":
+# KDE Plasma: konsole -e ./update.sh
+# GNOME: terminal: -e ./update.sh
+
 # Oppdater Flatpak-pakker
 echo "Oppdaterer Flatpak-pakker først hvis det finnes noen oppdateringer."
 flatpak update -y
