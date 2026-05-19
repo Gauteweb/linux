@@ -8,7 +8,7 @@
 # GNOME: terminal -e ./update.sh
 
 # Oppdater Flatpak-pakker
-echo "Oppdaterer Flatpak-pakker først hvis det finnes noen oppdateringer."
+echo -e "Oppdaterer Flatpak-pakker først hvis det finnes noen oppdateringer."
 flatpak update
 
 # Be om bekreftelse før DNF-oppdatering
