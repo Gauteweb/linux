@@ -21,8 +21,7 @@ echo -e "\nDette skriptet vil installere drivere for moderne Nvidia grafikkort o
 read -p "Trykk [Enter] for å fortsette..."
 
 # Installerer Nvidia-drivere for Nvidia GPU fra 2017 og nyere.
-# NB: Hvis Secure Boot er aktivert i BIOS, kan det skape problemer ved restart, sjekk: https://rpmfusion.org/Howto/Secure%20Boot
-echo "Installerer nyeste Nvidia-drivere via DNF. Du må antagelig skrive inn passordet ditt."
+echo -e "Installerer nyeste Nvidia-drivere via DNF. NB: Hvis Secure Boot er aktivert i BIOS kan det skape problemer ved restart, sjekk: https://rpmfusion.org/Howto/Secure%20Boot"
 sudo dnf install akmod-nvidia
 
 # Ferdig med å installere Nvidia-drivere
